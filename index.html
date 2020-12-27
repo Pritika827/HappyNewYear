@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			font-family:  roboto;
+		}
+		body
+		{
+			background: url(bg.jpg);
+		}
+		.outer
+		{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			height: 300px;
+		}
+		h1
+		{
+			font-size: 6rem;
+			line-height: 100px;
+			color: #eee;
+		}
+		.old{
+
+			position: relative;
+			animation: animate 3s linear;
+			opacity: 0;
+		}
+		@keyframes animate
+		{
+			0%{bottom: 0; opacity: 1}
+			100%{bottom: 250px; opacity: 0}
+		}
+		.new{
+			position: relative;
+			animation: animate1 3s linear;
+			right: 140px;
+		}
+		@keyframes animate1
+		{
+			0%{opacity:0; left: 0;}
+			100%{opacity: 1; left: -140px}
+		}
+		h3
+		{
+			font-size: 70px;
+			animation: animate2 6s linear;
+			font-family: Algerian;
+			color: #1e2772e;
+			text-shadow: 0px 1px #18dcff, 0px -1px #18dcff, -1px 0px #18dcff, 0px 0px 10px #18dcff;
+			animation: animate2 6s linear;
+		}
+		@keyframes animate2
+		{
+			0%{opacity: 0;}
+			50%{opacity: 0;}
+			100%{opacity: 1;}
+		}
+    p
+    {
+      font-weight: bold;
+      margin: 170px -280px   ;
+    }
+	</style>
+</head>
+<body>
+<div class="outer">
+	<h3>Happy New Year</h3>
+	<h1>
+		20
+		<span class="old">20</span>
+		<span class="new">21</span>
+	</h1>
+  <p>By Pritika sharma</p>
+</div>
+</body>
+</html>
